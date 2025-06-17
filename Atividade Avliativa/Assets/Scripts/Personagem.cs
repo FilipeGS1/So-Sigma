@@ -7,6 +7,7 @@ public class Personagem : MonoBehaviour
     [SerializeField] private int nivel;
     [SerializeField] private int vida;
     [SerializeField] private int mana;
+    [SerializeField] private float velocidade;
 
     // Getters e Setters
     public string Nome
@@ -25,6 +26,12 @@ public class Personagem : MonoBehaviour
     {
         get { return vida; }
         set { vida = value; }
+    }
+
+    public float Velocidade
+    {
+        get { return velocidade; }
+        set { velocidade = value; }
     }
 
     public int Mana
